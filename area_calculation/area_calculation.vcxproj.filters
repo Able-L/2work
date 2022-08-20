@@ -15,15 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="button.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="area.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="button.cpp">
+    <ClCompile Include="figure.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="button.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="figure.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

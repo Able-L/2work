@@ -1,5 +1,2 @@
-﻿  area.cpp
-  button.cpp
-  正在生成代码...
-E:\学习\大三上\软件工程训练营\C++_retangle\area_calculation\button.cpp(45): warning C4715: “Button::clickButton”: 不是所有的控件路径都返回值
-  area_calculation.vcxproj -> E:\学习\大三上\软件工程训练营\C++_retangle\area_calculation\x64\Debug\area_calculation.exe
+﻿  figure.cpp
+  area_calculation.vcxproj -> E:\C++_retangle\area_calculation\x64\Debug\area_calculation.exe
