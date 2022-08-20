@@ -17,7 +17,6 @@ public:
 	Button(int x, int y, int xx, int yy, COLORREF color, string textString, string textStyle);
 	void drawButton();   /*!< 绘制按钮*/
 	void drawTip1();  /*!< 绘制提示框 */
-	void drawTip2(MOUSEMSG m);
 	void changeColor(MOUSEMSG m);  /*!< 改变按钮颜色 */
 	bool isInButton(MOUSEMSG m);   /*!<判断鼠标是否在按钮上 */
 	bool clickButton(MOUSEMSG m);  /*!< 鼠标是否点击按钮 */

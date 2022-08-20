@@ -1,4 +1,5 @@
 #include "figure.h"
+#include<iomanip>
 Retangle:: Retangle(string x1, string x2, char c):Button()
 {
 	this->R_long = stod(x1);
@@ -12,11 +13,10 @@ Retangle:: Retangle(string x1, string x2, char c):Button()
 	this->textString = "长方形的面积为：";
 	this->textStyle = "楷体";
 };
-
 void Retangle::showArea()
 {
 	double R_long1, R_height1;
-	if (unit == 'a')
+	if (unit == 'b')
 	{
 		R_height1 = R_height * 2.54;
 		R_long1 = R_long * 2.54;
@@ -24,12 +24,16 @@ void Retangle::showArea()
 	}
 	else
 		area = R_height * R_long;
+	string area0 = to_string(area);
+	string show = "长方形的面积为" + area0 + "平方厘米";
+	textString = show;
+	drawTip1();
 	
 }
 
 Triangle::Triangle(string x1, string x2, char c) :Button()
 {
-	this->T_height =stod(x1);
+	this->T_height =stod(x1);   /*!< stod函数将字符串转化double类型*/
 	this->T_bottom =stod(x2);
 	this->unit = c;
 }
