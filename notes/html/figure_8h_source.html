@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Figure: figure.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Figure<span id="projectnumber">&#160;001</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">figure.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;button.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">const</span> <span class="keywordtype">double</span> PI = 3.1415926;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_retangle.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_retangle.html">Retangle</a> :<span class="keyword">public</span> <a class="code hl_class" href="class_button.html">Button</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">double</span> R_long, R_height;  </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordtype">char</span> unit ;  </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="class_retangle.html#a72478d98f3a8931d4c3206004d62b73f">Retangle</a>(<span class="keywordtype">string</span> x1, <span class="keywordtype">string</span> x2,<span class="keywordtype">char</span> c); </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_retangle.html#a8d3f517b35169b8694dcf0443d56b0e5">showArea</a>();    </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>};</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_triangle.html">   21</a></span><span class="keyword">class </span><a class="code hl_class" href="class_triangle.html">Triangle</a> :<span class="keyword">public</span> <a class="code hl_class" href="class_button.html">Button</a></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">double</span> T_height,T_bottom;  </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">char</span> unit;  </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_function" href="class_triangle.html#a7d644057f0bbc81c48aa79455f11c8ec">Triangle</a>(<span class="keywordtype">string</span> x1, <span class="keywordtype">string</span> x2,<span class="keywordtype">char</span> c);  </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_triangle.html#aa2e499a214b9f71d3164a41fc08d3e3e">showArea</a>();  </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_circle.html">   33</a></span><span class="keyword">class </span><a class="code hl_class" href="class_circle.html">Circle</a> :<span class="keyword">public</span> <a class="code hl_class" href="class_button.html">Button</a></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">double</span> r;  </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">char</span> unit;   </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_function" href="class_circle.html#a03eedb2acab1c6d9db155c63f29b63c5">Circle</a>(<span class="keywordtype">string</span> r1,<span class="keywordtype">char</span> c);  </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_circle.html#a8219029ca45302814ec463bf02ca8e61">showArea</a>();  </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
+<div class="ttc" id="aclass_button_html"><div class="ttname"><a href="class_button.html">Button</a></div><div class="ttdef"><b>Definition:</b> button.h:14</div></div>
+<div class="ttc" id="aclass_circle_html"><div class="ttname"><a href="class_circle.html">Circle</a></div><div class="ttdef"><b>Definition:</b> figure.h:34</div></div>
+<div class="ttc" id="aclass_circle_html_a03eedb2acab1c6d9db155c63f29b63c5"><div class="ttname"><a href="class_circle.html#a03eedb2acab1c6d9db155c63f29b63c5">Circle::Circle</a></div><div class="ttdeci">Circle(string r1, char c)</div><div class="ttdef"><b>Definition:</b> figure.cpp:45</div></div>
+<div class="ttc" id="aclass_circle_html_a8219029ca45302814ec463bf02ca8e61"><div class="ttname"><a href="class_circle.html#a8219029ca45302814ec463bf02ca8e61">Circle::showArea</a></div><div class="ttdeci">void showArea()</div><div class="ttdef"><b>Definition:</b> figure.cpp:50</div></div>
+<div class="ttc" id="aclass_retangle_html"><div class="ttname"><a href="class_retangle.html">Retangle</a></div><div class="ttdef"><b>Definition:</b> figure.h:10</div></div>
+<div class="ttc" id="aclass_retangle_html_a72478d98f3a8931d4c3206004d62b73f"><div class="ttname"><a href="class_retangle.html#a72478d98f3a8931d4c3206004d62b73f">Retangle::Retangle</a></div><div class="ttdeci">Retangle(string x1, string x2, char c)</div><div class="ttdef"><b>Definition:</b> figure.cpp:3</div></div>
+<div class="ttc" id="aclass_retangle_html_a8d3f517b35169b8694dcf0443d56b0e5"><div class="ttname"><a href="class_retangle.html#a8d3f517b35169b8694dcf0443d56b0e5">Retangle::showArea</a></div><div class="ttdeci">void showArea()</div><div class="ttdef"><b>Definition:</b> figure.cpp:16</div></div>
+<div class="ttc" id="aclass_triangle_html"><div class="ttname"><a href="class_triangle.html">Triangle</a></div><div class="ttdef"><b>Definition:</b> figure.h:22</div></div>
+<div class="ttc" id="aclass_triangle_html_a7d644057f0bbc81c48aa79455f11c8ec"><div class="ttname"><a href="class_triangle.html#a7d644057f0bbc81c48aa79455f11c8ec">Triangle::Triangle</a></div><div class="ttdeci">Triangle(string x1, string x2, char c)</div><div class="ttdef"><b>Definition:</b> figure.cpp:34</div></div>
+<div class="ttc" id="aclass_triangle_html_aa2e499a214b9f71d3164a41fc08d3e3e"><div class="ttname"><a href="class_triangle.html#aa2e499a214b9f71d3164a41fc08d3e3e">Triangle::showArea</a></div><div class="ttdeci">void showArea()</div><div class="ttdef"><b>Definition:</b> figure.cpp:40</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

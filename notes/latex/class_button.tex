@@ -1,0 +1,180 @@
+\hypertarget{class_button}{}\doxysection{Button类 参考}
+\label{class_button}\index{Button@{Button}}
+
+
+{\ttfamily \#include $<$button.\+h$>$}
+
+类 Button 继承关系图\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_button}
+\end{center}
+\end{figure}
+\doxysubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_button_a3b36df1ae23c58aedb9e15a713159459}{Button}} ()
+\item 
+\mbox{\Hypertarget{class_button_a855bfcd8c972bc2e0c866faba85b6e5f}\label{class_button_a855bfcd8c972bc2e0c866faba85b6e5f}} 
+{\bfseries Button} (int \mbox{\hyperlink{class_button_a2ec3bc40025b64b44319e7464164d61f}{x}}, int \mbox{\hyperlink{class_button_afff35ce0c47f662c3b096e5b644648a5}{y}}, int \mbox{\hyperlink{class_button_a22da9de24e8252fd0726806404af75c6}{xx}}, int \mbox{\hyperlink{class_button_ab66c331dd8f43dd209a548acb24b1888}{yy}}, COLORREF \mbox{\hyperlink{class_button_ab2c8d382feed381a9f0b6db4e8f979ee}{color}}, string \mbox{\hyperlink{class_button_add6d220f47b48e17c22a7119edac3430}{text\+String}}, string \mbox{\hyperlink{class_button_ae173fcb98033af6415beda5e434312b9}{text\+Style}})
+\item 
+void \mbox{\hyperlink{class_button_aefe153559b2477c09a934c9f4ca1588d}{draw\+Button}} ()
+\item 
+void \mbox{\hyperlink{class_button_adc8cf424ead2ab0e0f896d9e755d3525}{draw\+Tip1}} ()
+\item 
+void \mbox{\hyperlink{class_button_a3eb34b9a36cbf56bcd3ee69f060ca5a7}{change\+Color}} (MOUSEMSG m)
+\item 
+bool \mbox{\hyperlink{class_button_aa45194d794f5e2323a221238e6c811b5}{is\+In\+Button}} (MOUSEMSG m)
+\item 
+bool \mbox{\hyperlink{class_button_af257e4c6539999930c8f3f7eaa4e515f}{click\+Button}} (MOUSEMSG m)
+\item 
+COLORREF \& \mbox{\hyperlink{class_button_a31c8517a98a9df35efa8abf6b31ba847}{get\+Color}} ()
+\item 
+string \& \mbox{\hyperlink{class_button_a5a0769a16f7aca865300e9d93d1a293f}{get\+Text}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_button_aa724e20a34d7d9713bf08edd66f73ae7}{area}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_button_a2ec3bc40025b64b44319e7464164d61f}{x}}
+\item 
+int \mbox{\hyperlink{class_button_afff35ce0c47f662c3b096e5b644648a5}{y}}
+\item 
+int \mbox{\hyperlink{class_button_a22da9de24e8252fd0726806404af75c6}{xx}}
+\item 
+int \mbox{\hyperlink{class_button_ab66c331dd8f43dd209a548acb24b1888}{yy}}
+\item 
+COLORREF \mbox{\hyperlink{class_button_ab2c8d382feed381a9f0b6db4e8f979ee}{color}}
+\item 
+string \mbox{\hyperlink{class_button_add6d220f47b48e17c22a7119edac3430}{text\+String}}
+\item 
+string \mbox{\hyperlink{class_button_ae173fcb98033af6415beda5e434312b9}{text\+Style}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+这是一个按钮类
+
+它可以实现按钮的绘制以及相关提示框的绘制 
+
+\doxysubsection{构造及析构函数说明}
+\mbox{\Hypertarget{class_button_a3b36df1ae23c58aedb9e15a713159459}\label{class_button_a3b36df1ae23c58aedb9e15a713159459}} 
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{Button()}{Button()}}
+{\footnotesize\ttfamily Button\+::\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+这个cpp文件主要实现按钮中相关函数的实现
+
+包括按钮和提示框的绘制 
+
+\doxysubsection{成员函数说明}
+\mbox{\Hypertarget{class_button_a3eb34b9a36cbf56bcd3ee69f060ca5a7}\label{class_button_a3eb34b9a36cbf56bcd3ee69f060ca5a7}} 
+\index{Button@{Button}!changeColor@{changeColor}}
+\index{changeColor@{changeColor}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{changeColor()}{changeColor()}}
+{\footnotesize\ttfamily void Button\+::change\+Color (\begin{DoxyParamCaption}\item[{MOUSEMSG}]{m }\end{DoxyParamCaption})}
+
+改变按钮颜色 \mbox{\Hypertarget{class_button_af257e4c6539999930c8f3f7eaa4e515f}\label{class_button_af257e4c6539999930c8f3f7eaa4e515f}} 
+\index{Button@{Button}!clickButton@{clickButton}}
+\index{clickButton@{clickButton}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{clickButton()}{clickButton()}}
+{\footnotesize\ttfamily bool Button\+::click\+Button (\begin{DoxyParamCaption}\item[{MOUSEMSG}]{m }\end{DoxyParamCaption})}
+
+鼠标是否点击按钮 \mbox{\Hypertarget{class_button_aefe153559b2477c09a934c9f4ca1588d}\label{class_button_aefe153559b2477c09a934c9f4ca1588d}} 
+\index{Button@{Button}!drawButton@{drawButton}}
+\index{drawButton@{drawButton}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{drawButton()}{drawButton()}}
+{\footnotesize\ttfamily void Button\+::draw\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+绘制按钮 \texorpdfstring{$<$}{<} 背景模式设计
+
+\texorpdfstring{$<$}{<} 文字颜色设计
+
+\texorpdfstring{$<$}{<} 文字样式设计
+
+\texorpdfstring{$<$}{<} 文字打印输出\mbox{\Hypertarget{class_button_adc8cf424ead2ab0e0f896d9e755d3525}\label{class_button_adc8cf424ead2ab0e0f896d9e755d3525}} 
+\index{Button@{Button}!drawTip1@{drawTip1}}
+\index{drawTip1@{drawTip1}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{drawTip1()}{drawTip1()}}
+{\footnotesize\ttfamily void Button\+::draw\+Tip1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+绘制提示框 \mbox{\Hypertarget{class_button_a31c8517a98a9df35efa8abf6b31ba847}\label{class_button_a31c8517a98a9df35efa8abf6b31ba847}} 
+\index{Button@{Button}!getColor@{getColor}}
+\index{getColor@{getColor}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily COLORREF \& Button\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+返回按钮颜色\mbox{\Hypertarget{class_button_a5a0769a16f7aca865300e9d93d1a293f}\label{class_button_a5a0769a16f7aca865300e9d93d1a293f}} 
+\index{Button@{Button}!getText@{getText}}
+\index{getText@{getText}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{getText()}{getText()}}
+{\footnotesize\ttfamily string \& Button\+::get\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+返回按钮文字\mbox{\Hypertarget{class_button_aa45194d794f5e2323a221238e6c811b5}\label{class_button_aa45194d794f5e2323a221238e6c811b5}} 
+\index{Button@{Button}!isInButton@{isInButton}}
+\index{isInButton@{isInButton}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{isInButton()}{isInButton()}}
+{\footnotesize\ttfamily bool Button\+::is\+In\+Button (\begin{DoxyParamCaption}\item[{MOUSEMSG}]{m }\end{DoxyParamCaption})}
+
+判断鼠标是否在按钮上 
+
+\doxysubsection{类成员变量说明}
+\mbox{\Hypertarget{class_button_aa724e20a34d7d9713bf08edd66f73ae7}\label{class_button_aa724e20a34d7d9713bf08edd66f73ae7}} 
+\index{Button@{Button}!area@{area}}
+\index{area@{area}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{area}{area}}
+{\footnotesize\ttfamily double Button\+::area}
+
+按钮区域面积 \mbox{\Hypertarget{class_button_ab2c8d382feed381a9f0b6db4e8f979ee}\label{class_button_ab2c8d382feed381a9f0b6db4e8f979ee}} 
+\index{Button@{Button}!color@{color}}
+\index{color@{color}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily COLORREF Button\+::color\hspace{0.3cm}{\ttfamily [protected]}}
+
+矩形框背景的颜色 \mbox{\Hypertarget{class_button_add6d220f47b48e17c22a7119edac3430}\label{class_button_add6d220f47b48e17c22a7119edac3430}} 
+\index{Button@{Button}!textString@{textString}}
+\index{textString@{textString}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{textString}{textString}}
+{\footnotesize\ttfamily string Button\+::text\+String\hspace{0.3cm}{\ttfamily [protected]}}
+
+矩形里的文字 \mbox{\Hypertarget{class_button_ae173fcb98033af6415beda5e434312b9}\label{class_button_ae173fcb98033af6415beda5e434312b9}} 
+\index{Button@{Button}!textStyle@{textStyle}}
+\index{textStyle@{textStyle}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{textStyle}{textStyle}}
+{\footnotesize\ttfamily string Button\+::text\+Style\hspace{0.3cm}{\ttfamily [protected]}}
+
+文字的样式 \mbox{\Hypertarget{class_button_a2ec3bc40025b64b44319e7464164d61f}\label{class_button_a2ec3bc40025b64b44319e7464164d61f}} 
+\index{Button@{Button}!x@{x}}
+\index{x@{x}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int Button\+::x\hspace{0.3cm}{\ttfamily [protected]}}
+
+矩形左上顶点的横坐标 \mbox{\Hypertarget{class_button_a22da9de24e8252fd0726806404af75c6}\label{class_button_a22da9de24e8252fd0726806404af75c6}} 
+\index{Button@{Button}!xx@{xx}}
+\index{xx@{xx}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{xx}{xx}}
+{\footnotesize\ttfamily int Button\+::xx\hspace{0.3cm}{\ttfamily [protected]}}
+
+矩形右下顶点的横坐标 \mbox{\Hypertarget{class_button_afff35ce0c47f662c3b096e5b644648a5}\label{class_button_afff35ce0c47f662c3b096e5b644648a5}} 
+\index{Button@{Button}!y@{y}}
+\index{y@{y}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int Button\+::y\hspace{0.3cm}{\ttfamily [protected]}}
+
+矩形左上顶点的纵坐标 \mbox{\Hypertarget{class_button_ab66c331dd8f43dd209a548acb24b1888}\label{class_button_ab66c331dd8f43dd209a548acb24b1888}} 
+\index{Button@{Button}!yy@{yy}}
+\index{yy@{yy}!Button@{Button}}
+\doxysubsubsection{\texorpdfstring{yy}{yy}}
+{\footnotesize\ttfamily int Button\+::yy\hspace{0.3cm}{\ttfamily [protected]}}
+
+矩形右下顶点的纵坐标 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+button.\+h\item 
+button.\+cpp\end{DoxyCompactItemize}
