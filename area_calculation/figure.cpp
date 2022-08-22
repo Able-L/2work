@@ -36,10 +36,29 @@ Triangle::Triangle(string x1, string x2, char c) :Button()
 	this->T_height =stod(x1);   /*!< stod函数将字符串转化double类型*/
 	this->T_bottom =stod(x2);
 	this->unit = c;
+	this->x = 0;
+	this->y = 150;
+	this->xx = 800;
+	this->yy = 200;
+	this->color = WHITE;
+	this->textString = "三角形的面积为：";
+	this->textStyle = "楷体";
 }
 void Triangle::showArea()
 {
-
+	double T_height1, T_bottom1;
+	if (unit == 'b')
+	{
+		T_height1 = T_height * 2.54;
+		T_bottom1 = T_bottom * 2.54;
+		area = T_height1 * T_bottom1/2;
+	}
+	else
+		area = T_height * T_bottom/2;
+	string area0 = to_string(area);
+	string show = "三角形的面积为" + area0 + "平方厘米";
+	textString = show;
+	drawTip1();
 }
 
 Circle::Circle(string r1, char c) :Button()

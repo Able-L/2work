@@ -34,6 +34,22 @@ int main()
 			Retangle* retangle1 = new Retangle(x1, x2, x3);
 			retangle1->showArea();
 		}
+		if (delta->clickButton(m))    /*!< 鼠标是否点击按钮*/
+		{
+			Button* tip2 = new Button(0, 100, 800, 150, WHITE, "请输入三角形的底和高：", "楷体");
+			tip2->drawTip1();
+			char m1[10];
+			InputBox(m1, 10, "请输入底：");   /*!< Inpubox函数弹出提示框接受输入*/
+			char m2[10];
+			InputBox(m2, 10, "请输入高：");
+			char m3[10];
+			InputBox(m3, 10, "请选择单位：a（厘米) 或 b（英寸）");
+			string x1 = m1;
+			string x2 = m2;
+			char x3 = m3[0];
+			Triangle* triangle1 = new Triangle(x1, x2, x3);
+			triangle1->showArea();
+		}
 
 	}
 	_getch();  /*!<用户接受字符，防止闪屏 */
