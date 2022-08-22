@@ -1,0 +1,6 @@
+﻿  area.cpp
+  button.cpp
+  figure.cpp
+  正在生成代码...
+E:\软件工程训练营\button.cpp(59): warning C4715: “Button::clickButton”: 不是所有的控件路径都返回值
+  area_calculation.vcxproj -> E:\软件工程训练营\x64\Debug\area_calculation.exe
